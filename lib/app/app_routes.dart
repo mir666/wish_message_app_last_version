@@ -4,13 +4,17 @@ import 'package:wish_message_app/core/setting/ui/screens/setting_screen.dart';
 import 'package:wish_message_app/features/anniversary/ui/screens/anniversary_screen.dart';
 import 'package:wish_message_app/features/auth/ui/screens/splash_screen.dart';
 import 'package:wish_message_app/features/birthday/ui/screens/birthday_screen.dart';
+import 'package:wish_message_app/features/common/favorite_sms_screen.dart';
 import 'package:wish_message_app/features/eid/ui/screens/eid_screen.dart';
+import 'package:wish_message_app/features/engagement/ui/screens/engagement_screen.dart';
 import 'package:wish_message_app/features/farewell/ui/screens/farewell_screen.dart';
 import 'package:wish_message_app/features/friendship/ui/screens/friend_ship_screen.dart';
+import 'package:wish_message_app/features/good%20morning/ui/screens/good_morning_screen.dart';
+import 'package:wish_message_app/features/good%20night/ui/screens/good_night_screen.dart';
 import 'package:wish_message_app/features/home/ui/screens/home_screen.dart';
-import 'package:wish_message_app/features/love/ui/screen/love_screen.dart';
 import 'package:wish_message_app/features/newYear/ui/screens/new_year_screen.dart';
 import 'package:wish_message_app/features/valentine/ui/screens/valentines_day_screen.dart';
+import 'package:wish_message_app/features/wedding/ui/screens/wedding_screen.dart';
 
 class AppRoutes{
   static Route<dynamic> onGenerateRoute(RouteSettings setting){
@@ -19,8 +23,8 @@ class AppRoutes{
        route = const SplashScreen();
     } else if(setting.name == HomeScreen.name){
       route = const HomeScreen();
-    } else if(setting.name == LoveScreen.name){
-      route = const LoveScreen();
+    } /*else if(setting.name == LoveScreen.name){
+      route = LoveScreen();
     } else if(setting.name == AnniversaryScreen.name){
       route = const AnniversaryScreen();
     } else if(setting.name == EidScreen.name){
@@ -35,7 +39,17 @@ class AppRoutes{
       route = const ValentinesDayScreen();
     } else if(setting.name == FarewellScreen.name){
       route = const FarewellScreen();
-    } else if(setting.name == SettingScreen.name){
+    } else if(setting.name == GoodMorningScreen.name){
+      route = const GoodMorningScreen();
+    }  else if(setting.name == GoodNightScreen.name){
+      route = const GoodNightScreen();
+    }  else if(setting.name == EngagementScreen.name){
+      route = const EngagementScreen();
+    }  else if(setting.name == WeddingScreen.name){
+      route = const WeddingScreen();
+    }*/ else if(setting.name == FavoriteScreen.name){
+      route = FavoriteScreen();
+    }  else if(setting.name == SettingScreen.name){
       route = const SettingScreen();
     } else if(setting.name == PrivacyPolicyScreen.name){
       route = const PrivacyPolicyScreen();

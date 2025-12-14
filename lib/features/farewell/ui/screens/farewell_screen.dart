@@ -19,7 +19,7 @@ class _FarewellScreenState extends State<FarewellScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            FarewellSms(),
+            //FarewellSms(),
           ],
         ),
       ),

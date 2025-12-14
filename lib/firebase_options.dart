@@ -65,4 +65,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'wish-message.firebasestorage.app',
     iosBundleId: 'com.example.wishMessageApp',
   );
+
 }

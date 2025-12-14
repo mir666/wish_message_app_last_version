@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:wish_message_app/app/app_colors.dart';
 
 class CategoryCard extends StatelessWidget {
@@ -17,8 +18,8 @@ class CategoryCard extends StatelessWidget {
           onTap: onTab,
           child: Card(
             child: Container(
-              height: 150,
-              width: 150,
+              height: 170,
+              width: Get.width,
               decoration: BoxDecoration(
                 color: AppColors.dividerColor.withOpacity(0.5),
                 borderRadius: BorderRadius.circular(12),

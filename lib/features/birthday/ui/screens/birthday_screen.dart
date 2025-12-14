@@ -19,7 +19,8 @@ class _BirthDayScreenState extends State<BirthDayScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            BirthdaySms(),
+            //BirthdaySms(),
+            //FarewellSms()
           ],
         ),
       ),

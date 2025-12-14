@@ -21,7 +21,7 @@ class _ValentinesDayScreenState extends State<ValentinesDayScreen> {
           children: [
             Column(
               children: [
-                ValentinesDaySms(),
+                //ValentinesDaySms(),
                 SizedBox(height: 30),
               ],
             ),

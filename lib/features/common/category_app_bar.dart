@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:wish_message_app/core/setting/ui/screens/setting_screen.dart';
 
 class CategoryAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CategoryAppBar({
@@ -13,17 +12,6 @@ class CategoryAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Text(title),
       centerTitle: true,
-      actions: [
-        IconButton(
-          onPressed: () {
-            Navigator.pushNamed(context, SettingScreen.name);
-          },
-          icon: Icon(
-            Icons.settings,
-            size: 28,
-          ),
-        ),
-      ],
     );
   }
 

@@ -1,5 +1,7 @@
+/*
 import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:wish_message_app/features/common/read_sms.dart';
 
@@ -22,6 +24,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন! ভালোবাসা, আনন্দ এবং তোমার প্রিয় জিনিসে ভরা একটি দিন কামনা করছি।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -32,6 +35,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('এই সুন্দর দিনটি তোমার জীবনে সুখ এবং নতুন সুযোগ নিয়ে আসুক। তোমার জন্মদিনের সবচেয়ে আনন্দময় শুভেচ্ছা!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -42,6 +46,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিন সুন্দর এবং মধুর স্মৃতিতে ভরে উঠুক। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -52,6 +57,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিনের বিশেষ শুভেচ্ছা এবং আগামী বছরের জন্য শুভকামনা! অনেক অনেক শুভকামনা 🎂💐🎁');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -62,6 +68,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তুমি ভেতরে ও বাইরে, দুটো দিক থেকেই এত সুন্দর একজন মানুষ! তোমার জন্মদিনে, আমি তোমার আনন্দময় জীবন কামনা করি।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -72,6 +79,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন! তোমাকে জন্মদিনের উষ্ণ শুভেচ্ছা এবং অনেক ভালোবাসা জানাচ্ছি। এই জন্মদিনে তোমার প্রাপ্য সকল সাফল্য বয়ে আনুক।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -82,6 +90,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('এই বিশেষ দিনের জন্য আমার সকল শুভেচ্ছা গ্রহণ করুন। আপনার দিনটি ভালোবাসা, সৌভাগ্য এবং আপনার হৃদয়ের সমস্ত আকাঙ্ক্ষায় পূর্ণ হোক। আমি আপনার জন্মদিনের শুভেচ্ছা জানাই, সর্বদা আনন্দ এবং স্বাস্থ্যে ভরা!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -92,6 +101,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন, প্রিয়। ঈশ্বর তোমার মুখে সেই সুন্দর হাসি সবসময় ধরে রাখুন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -102,6 +112,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার হৃদয় আনন্দে ভরে উঠুক এবং তোমার জীবন সুখে ভরে উঠুক। শুভ জন্মদিন, প্রিয়তমা!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -112,6 +123,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আরও একটি বছরের জন্য অভিনন্দন! আশা করি দিনটি আপনার ভালোবাসার মানুষ এবং আপনার চারপাশের কাছের মানুষদের সকলের সাথে পরিপূর্ণ হবে। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -122,6 +134,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আসন্ন বছরটি আপনার জীবনে ইতিবাচক এবং অর্থপূর্ণ পরিবর্তন আনুক! আপনার জন্মদিনের শুভেচ্ছা, আনন্দময় এবং আনন্দময় হোক।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -132,6 +145,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিনের শুভেচ্ছা! আমি আশা করি আনন্দ এবং সমৃদ্ধি সর্বত্র তোমার সাথে থাকবে।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -142,6 +156,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন প্রিয়! আজকের দিনটি বছরের সেরা দিন হোক। তুমি অসাধারণ এবং তুমি যা কিছুর জন্য প্রত্যাশিত তা অর্জন করবে। আমার প্রার্থনা এবং ঈশ্বরের আশীর্বাদ আজ এবং সর্বদা তোমার সাথে আছে।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -152,6 +167,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন! তুমি আমার দেখা সবচেয়ে দয়ালু আত্মাদের একজন। আমি আশা করি আজকের দিনটি তোমার হৃদয়ে শান্তি, মুখে হাসি এবং তোমার জীবনে আশীর্বাদ বয়ে আনবে। তুমি সত্যিই পৃথিবীর সেরা জিনিসের যোগ্য।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -162,6 +178,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শআমার জীবনের সবচেয়ে প্রিয় মানুষটির জন্মদিনের শুভেচ্ছা! তুমি আমার জীবনে ঘটে যাওয়া সেরা জিনিস। আমি আশা করি এই বিশেষ দিনটি তোমাকে পৃথিবীর সমস্ত মঙ্গল দিয়ে আশীর্বাদ করবে।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -172,6 +189,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জীবনের প্রতিটি মুহুর্তে তুমি সুখী হওয়ার যোগ্য। ঈশ্বর তোমার জীবনকে তোমার প্রিয়জনদের সাথে চিরস্থায়ী শান্তি ও সম্প্রীতির সাথে সূচনা করুন! তোমার জন্মদিনের অনেক অনেক শুভেচ্ছা!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -182,6 +200,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন। আপনার জন্মদিনে সুখ, স্বাস্থ্য এবং সমৃদ্ধি কামনা করছি।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -192,6 +211,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জীবনের আরেকটি বছরে পা রাখার সাথে সাথে, আমি তোমার সকল সুখ এবং সাফল্য কামনা করি। তোমাকে জন্মদিনের অনেক অনেক শুভেচ্ছা, প্রিয়। তোমার জন্মদিন তোমার মতোই অসাধারণ হোক।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -202,6 +222,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন, প্রিয়! এই বছর তোমার কেকের মোমবাতি দিয়ে তোমার সমস্ত উদ্বেগ এবং দুর্ভাগ্য দূর করুক। আমি আশা করি এই বছর তোমার জন্য সেই সমস্ত ভালো জিনিস নিয়ে আসবে যার জন্য তুমি প্রার্থনা করে আসছো।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -212,6 +233,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন! আশা করি তুমি তোমার মনের সব ইচ্ছা পূরণ করবে।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -222,6 +244,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিনের শুভেচ্ছা এবং আগামী জীবনের শুভকামনা। হাসতে থাকো!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -232,6 +255,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিনে অনেক ভালোবাসা এবং আশীর্বাদ, প্রিয়। সুখে থেকো, চিরকাল।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -242,6 +266,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন! উজ্জ্বল হও, বেড়ে উঠো এবং তোমার স্বপ্নের পিছনে ছুটতে থাকো।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -252,6 +277,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন! তোমার অসাধারণত্ব ছড়িয়ে দাও এবং বয়সকে কখনোই তোমাকে ধীর হতে দিও না।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -262,6 +288,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('একজন অসাধারণ ব্যক্তির জন্মদিনের শুভেচ্ছা! তোমার দিনগুলো আনন্দময় এবং পবিত্র হোক।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -272,6 +299,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন ❤️ আমাদের ভালোবাসা তোমার চিরসবুজ হাসির উৎস হোক!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -282,6 +310,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আমার সমস্ত ভালোবাসা দিয়ে আমার আন্তরিক জন্মদিনের শুভেচ্ছা গ্রহণ করো। তোমাকে জন্মদিনের শুভেচ্ছা।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -292,6 +321,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আমার রোদকে জন্মদিনের শুভেচ্ছা। আমার পৃথিবীকে আলোকিত করার জন্য ধন্যবাদ 🥰');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -302,6 +332,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার বিশেষ উপলক্ষে আমি তোমাকে কেবল সমস্ত সুখ কামনা করি। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -312,6 +343,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার মুখের হাসির চেয়ে ভালো আর কিছু হতে পারে না। এই হাসি যেন কখনো ম্লান না হয়। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -322,6 +354,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আশা করি তোমার দিনটি কেক, হাসি এবং আনন্দময় চমকে ভরে উঠবে। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -332,6 +365,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('এই বিশেষ দিনে তোমাকে আমার ভালোবাসা এবং প্রার্থনা জানাচ্ছি। শুভ জন্মদিন, সুখে থাকুন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -342,6 +376,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন তোমাকে। ঈশ্বর তোমাকে আশীর্বাদ করুন এবং তোমার জন্মবার্ষিকী উদযাপনের জন্য তোমাকে আরও অনেক সুখী বছর দান করুন।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -352,6 +387,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('প্রতিটি চ্যালেঞ্জের মধ্য দিয়ে জ্বলে উঠো। তুমি দুর্দান্ত কিছু করতে সক্ষম। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -362,6 +398,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিনের শুভেচ্ছা! আগামী বছরগুলোতে তোমার জন্য অনেক ভালো দিন অপেক্ষা করছে। আশা করি তুমি সব জয় করবে।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -372,6 +409,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন, প্রিয়। তুমি জীবনে কতদূর এসেছো তাতে আমি গর্বিত এবং আমি নিশ্চিত তুমি আরও অনেক দূর এগিয়ে যাবে!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -382,6 +420,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('পৃথিবীর প্রতিটি বাধা অতিক্রম করার ক্ষমতা তোমার আছে, তাই কখনো আশা হারাবেন না এবং জ্বলতে থাকুন। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -392,6 +431,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তুমি যা হারিয়েছো তা ভুলে যাও এবং যা অর্জন করেছো তা নিয়ে ভাবো। তোমার দুর্বলতার উপর নয়, তোমার শক্তির উপর মনোযোগ দাও। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -402,6 +442,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমাকে জন্মদিনের অনেক অনেক শুভেচ্ছা! পৃথিবী তোমার ঝিনুক, এখনই সময় তোমার এগিয়ে যাওয়ার এবং তোমার জীবনকে পরিপূর্ণভাবে উপভোগ করার।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -412,6 +453,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আজ তোমার বিশেষ দিন! আজ হোক বিশুদ্ধ সুখ এবং ইচ্ছা পূরণের দিন, আজ হোক কৃতজ্ঞতা এবং তৃপ্তির দিন। তোমাকে জন্মদিনের অনেক অনেক শুভেচ্ছা!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -422,6 +464,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আমি যদি তোমাকে জড়িয়ে ধরতে পারতাম। কিন্তু আমি আমার সমস্ত ভালোবাসা মাইল পেরিয়ে পাঠাচ্ছি। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -432,6 +475,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('এই পৃথিবীর সবচেয়ে প্রতিভাবান, পরিশ্রমী এবং সহায়ক সহকর্মীকে জন্মদিনের শুভেচ্ছা!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -442,6 +486,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন! আশা করি আপনার প্রিয়জনদের সাথে আপনার দিনটি দারুন কাটবে।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -452,6 +497,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আশা করি তোমার ভালোবাসার জিনিসগুলো দিয়ে ভরা একটা অসাধারণ দিন কাটবে। তোমার জন্য অপেক্ষা করছে এক অসাধারণ জীবন। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -462,6 +508,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিন আমাকে মনে করিয়ে দেয় যে আমি একা নই যে বৃদ্ধ হচ্ছি; তুমিও এতে জড়িত। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -472,6 +519,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তুমি আমার চোখে সবচেয়ে শক্তিশালী মানুষ যে তার সব স্বপ্ন পূরণে কখনো ব্যর্থ হয় না। শুভ জন্মদিন, প্রিয়!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -482,6 +530,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('প্রভুর করুণা তোমার উপর বর্ষিত হোক। তিনি তোমার সমস্ত স্বপ্ন পূরণ করুন। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -492,6 +541,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('জীবনের আরেকটি বছর উদযাপনের সময় আজ এবং প্রতিদিন ঈশ্বরের আনন্দ এবং শান্তি আপনার সাথে থাকুক। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -502,6 +552,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('জীবন চলে যায়, কিন্তু তোমার স্মৃতি কখনো আমার পিছু ছাড়ে না। শুভ জন্মদিন প্রিয়তম!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -512,6 +563,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আমার হৃদয়ে কেউ তোমার স্থান নিতে পারবে না। তুমি আছো এবং সবসময় আমার কাছে থাকবে। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -522,6 +574,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তুমি আমার হৃদয়ের রাজকন্যা ছিলে এবং সবসময় থাকবে। সেই সুন্দরী মেয়েটিকে জন্মদিনের শুভেচ্ছা, যাকে আমি আমার সমস্ত হৃদয় দিয়ে ভালোবেসেছি।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -532,6 +585,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আমি হয়তো তোমাকে ভালোবাসা বন্ধ করে দিয়েছি, কিন্তু তোমাকে মিস করা এবং সময়মতো জন্মদিনের শুভেচ্ছা জানানো আমি কখনোই থামাবো না।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -542,6 +596,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আমি কখনো ভাবিনি আমাদের পরিণতি এভাবে হবে। শুভ জন্মদিন। তোমাকে মিস করছি!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -552,6 +607,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্য আমার চোখ কাঁদে, কিন্তু আমার হৃদয় চায় তুমি সুখী থাকো, এমনকি যদি আমাকে ছাড়া বেঁচে থাকতে হয়। শুভ জন্মদিন!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -562,6 +618,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন এবং তোমার জন্য আমার শুভকামনা। তুমি সুখী, সুস্থ এবং সফল জীবনযাপন করো।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -572,6 +629,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিনের শুভেচ্ছা এবং আগামী জীবনের জন্য শুভকামনা। তুমি যেন বড় হয়ে তোমার পছন্দের সবকিছু হও।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -582,6 +640,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আমি একজন গর্বিত শিক্ষক কারণ আমার তোমার মতো ছাত্র আছে। তোমার জন্মদিনের অনেক অনেক শুভেচ্ছা!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -592,6 +651,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আজ আমি তোমাকে একটা কাজ দিচ্ছি, আর তা হলো তোমার দিনটি পুরোপুরি উপভোগ করা! তোমাকে জন্মদিনের অনেক অনেক শুভেচ্ছা।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -602,6 +662,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন, প্রিয় আত্মা। তোমার ভেতরে অনেক সম্ভাবনা আছে, দয়া করে এটি লালন করতে থাকো!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -612,6 +673,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন, প্রিয় আত্মা। তোমার ভেতরে অনেক সম্ভাবনা আছে, দয়া করে এটি লালন করতে থাকো!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -622,6 +684,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জীবনের প্রতিটি মুহূর্ত তোমার জন্মদিনের কেকের মতো মিষ্টি হোক। সবসময় ধন্য থাকো!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -632,6 +695,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('খুব বিশেষ মেয়েটির জন্মদিনের শুভেচ্ছা। তুমি যেন এখনকার মতোই প্রাণবন্ত থাকো।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -642,6 +706,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তুমি এত সৃজনশীল যে আমারও তোমার কাছ থেকে অনেক কিছু শেখার আছে! তোমার জন্মদিনের শুভেচ্ছা, আমার প্রিয়।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -652,6 +717,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিন আনন্দময় চমকে ভরে উঠুক এবং তোমার জীবন আনন্দে ভরে উঠুক। আনন্দে কাটুক!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -662,6 +728,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('শুভ জন্মদিন! তুমি আমার একজন মেধাবী ছাত্র, আর তোমাকে পড়াতে পেরে আমি খুব আনন্দিত। আশা করি তুমি যেখানেই যাও ভালোবাসা এবং সমৃদ্ধি পাবে।');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -672,6 +739,7 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('তোমার জন্মদিনটা রোমাঞ্চকর হোক এবং জীবনটা অর্থপূর্ণ হোক। আমার সমর্থন এবং আশীর্বাদ সবসময় তোমার সাথে আছে!');
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -682,10 +750,52 @@ class BirthdaySms extends StatelessWidget {
             },
             copyButton: (){
               FlutterClipboard.copy('আমার অসাধারণ ছাত্রকে জন্মদিনের শুভেচ্ছা! তোমার প্রতিটি প্রচেষ্টায় তুমি জয়লাভ করো।');
+              Get.snackbar("Message", "Copied");
             },
           ),
         ],
       ),
     );
   }
+}*/
+
+
+/*
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:clipboard/clipboard.dart';
+import 'package:wish_message_app/features/common/read_sms.dart';
+import 'package:wish_message_app/features/farewell/ui/controllers/farewell_controller.dart';
+
+class FarewellSms extends StatelessWidget {
+  FarewellSms({super.key});
+
+  final FarewellSmsController controller = Get.put(FarewellSmsController());
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(16),
+      child: Obx(() {
+        return ListView.builder(
+          itemCount: controller.messages.length,
+          itemBuilder: (context, index) {
+            final msg = controller.messages[index];
+            return ReadSms(
+              message: msg,
+              favoriteButton: (bool isLiked){},
+              shareButton: () { Share.share(msg); },
+              copyButton: () {
+                FlutterClipboard.copy(msg);
+                Get.snackbar("Message", "Copied");
+              },
+
+            );
+          },
+        );
+      }),
+    );
+  }
 }
+*/

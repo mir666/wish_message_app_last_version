@@ -1,3 +1,4 @@
+/*
 import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -1172,4 +1173,4 @@ class FriendSms extends StatelessWidget {
       ),
     );
   }
-}
+}*/

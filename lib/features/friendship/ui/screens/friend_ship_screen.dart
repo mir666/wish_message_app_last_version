@@ -21,7 +21,7 @@ class _FriendShipScreenState extends State<FriendShipScreen> {
           children: [
             Column(
               children: [
-                FriendSms(),
+               // FriendSms(),
                 SizedBox(height: 30),
               ],
             ),

@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:wish_message_app/features/common/read_sms.dart';
 
@@ -14,7 +15,7 @@ class AnniversarySms extends StatelessWidget {
         children: [
           ReadSms(
             message: 'শুভ বার্ষিকী আমার ভালোবাসা! আমি আজ, আগামীকাল এবং চিরকাল তোমার সাথে থাকতে চাই।',
-            favoriteButton: () {},
+            favoriteButton: (bool isLiked) {  },
             shareButton: () {
               Share.share('শুভ বার্ষিকী আমার ভালোবাসা! আমি আজ, আগামীকাল এবং চিরকাল তোমার সাথে থাকতে চাই।');
             },
@@ -22,12 +23,12 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী আমার ভালোবাসা! আমি আজ, আগামীকাল এবং চিরকাল তোমার সাথে থাকতে চাই।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
             message: 'তুমি আমার অস্তিত্বের সুর, এবং আমাদের সুন্দর প্রেমের গল্পের জন্য আমি চির কৃতজ্ঞ। শুভ বার্ষিকী!',
-            favoriteButton: () {},
+            favoriteButton: (bool isLiked) {  },
             shareButton: () {
               Share.share('তুমি আমার অস্তিত্বের সুর, এবং আমাদের সুন্দর প্রেমের গল্পের জন্য আমি চির কৃতজ্ঞ। শুভ বার্ষিকী!');
             },
@@ -35,12 +36,12 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তুমি আমার অস্তিত্বের সুর, এবং আমাদের সুন্দর প্রেমের গল্পের জন্য আমি চির কৃতজ্ঞ। শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
             message: 'আমাদের বিবাহ, ভালোবাসা এবং পরিবারের একসাথে থাকার {বছরব্যাপী} শুভ বার্ষিকী। তোমার সাথে প্রতিটি মুহূর্ত জাদুকরী এবং বিশেষ! শুভ বার্ষিকী আমার ভালোবাসা ❤️',
-            favoriteButton: () {},
+            favoriteButton: (bool isLiked) {  },
             shareButton: () {
               Share.share('আমাদের বিবাহ, ভালোবাসা এবং পরিবারের একসাথে থাকার {বছরব্যাপী} শুভ বার্ষিকী। তোমার সাথে প্রতিটি মুহূর্ত জাদুকরী এবং বিশেষ! শুভ বার্ষিকী আমার ভালোবাসা ❤️');
             },
@@ -48,13 +49,13 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমাদের বিবাহ, ভালোবাসা এবং পরিবারের একসাথে থাকার {বছরব্যাপী} শুভ বার্ষিকী। তোমার সাথে প্রতিটি মুহূর্ত জাদুকরী এবং বিশেষ! শুভ বার্ষিকী আমার ভালোবাসা ❤️',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
             message:
             'আমাদের জীবনের এক অসাধারণ যাত্রা ছিল, আমরা একে অপরকে ভালোবেসেছিলাম, একে অপরের সাথে লড়াই করেছিলাম, কেঁদেছিলাম, হেসেছিলাম এবং একসাথে ঝড়ের কবল থেকে বেঁচে গিয়েছিলাম। তুমি আমার কাছে অনেক প্রিয়, তুমি সবসময় ছিলে! শুভ {বছর} বার্ষিকী!',
-            favoriteButton: () {},
+            favoriteButton: (bool isLiked) {  },
             shareButton: () {
               Share.share('আমাদের জীবনের এক অসাধারণ যাত্রা ছিল, আমরা একে অপরকে ভালোবেসেছিলাম, একে অপরের সাথে লড়াই করেছিলাম, কেঁদেছিলাম, হেসেছিলাম এবং একসাথে ঝড়ের কবল থেকে বেঁচে গিয়েছিলাম। তুমি আমার কাছে অনেক প্রিয়, তুমি সবসময় ছিলে! শুভ {বছর} বার্ষিকী!');
             },
@@ -62,13 +63,13 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমাদের জীবনের এক অসাধারণ যাত্রা ছিল, আমরা একে অপরকে ভালোবেসেছিলাম, একে অপরের সাথে লড়াই করেছিলাম, কেঁদেছিলাম, হেসেছিলাম এবং একসাথে ঝড়ের কবল থেকে বেঁচে গিয়েছিলাম। তুমি আমার কাছে অনেক প্রিয়, তুমি সবসময় ছিলে! শুভ {বছর} বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
             message:
             'গতকালের স্মৃতিগুলো আমাদের আগামীকালের জন্য অনুপ্রেরণা হোক! অনেক ভালোবাসা সহ শুভ বার্ষিকী!',
-            favoriteButton: () {},
+            favoriteButton: (bool isLiked) {  },
             shareButton: () {
               Share.share('গতকালের স্মৃতিগুলো আমাদের আগামীকালের জন্য অনুপ্রেরণা হোক! অনেক ভালোবাসা সহ শুভ বার্ষিকী!');
             },
@@ -76,13 +77,13 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'গতকালের স্মৃতিগুলো আমাদের আগামীকালের জন্য অনুপ্রেরণা হোক! অনেক ভালোবাসা সহ শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
             message:
             'আমার স্বপ্নের মানুষটিকে অনেক অনেক শুভেচ্ছা। তোমার পাশে হাঁটতে পারাটা আমার জন্য এক পরম সৌভাগ্যের ব্যাপার, আমার ভালোবাসা।',
-            favoriteButton: () {},
+            favoriteButton: (bool isLiked) {  },
             shareButton: () {
               Share.share('আমার স্বপ্নের মানুষটিকে অনেক অনেক শুভেচ্ছা। তোমার পাশে হাঁটতে পারাটা আমার জন্য এক পরম সৌভাগ্যের ব্যাপার, আমার ভালোবাসা।');
             },
@@ -90,7 +91,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমার স্বপ্নের মানুষটিকে অনেক অনেক শুভেচ্ছা। তোমার পাশে হাঁটতে পারাটা আমার জন্য এক পরম সৌভাগ্যের ব্যাপার, আমার ভালোবাসা।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -104,7 +105,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমাকে আমার স্ত্রী হিসেবে পাওয়া সত্যিই এক আশীর্বাদ। শুভ বার্ষিকী, প্রণয়ী ❤️ ভালোবাসার আরেকটি আনন্দময় বছরের জন্য শুভকামনা!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -118,7 +119,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'জীবনের ঝড়ের মাঝেও আমাদের ভালোবাসা যেন অনেকভাবে বিকশিত হয়। আমার একমাত্র প্রেমিককে শুভ বার্ষিকীর শুভেচ্ছা!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -132,7 +133,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমাদের দুজনকেই তোমাদের বার্ষিকীতে আমার উষ্ণ শুভেচ্ছা জানাচ্ছি। তোমরা দুজনেই আমাকে "সুখীভাবে চিরকাল" উপলব্ধি করিয়েছ।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -146,7 +147,7 @@ class AnniversarySms extends StatelessWidget {
                 Clipboard.setData(
                     ClipboardData(
                       text: 'শুভ বিবাহবার্ষিকী! তোমাদের প্রেমের গল্প অনুপ্রেরণাদায়ক হোক এবং তোমাদের হৃদয় চিরকাল কাছে থাকুক।শুভ বিবাহবার্ষিকী! তোমাদের প্রেমের গল্প অনুপ্রেরণাদায়ক হোক এবং তোমাদের হৃদয় চিরকাল কাছে থাকুক।',));
-                ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+                Get.snackbar("Message", "Copied");
               },
           ),
           ReadSms(
@@ -159,7 +160,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ ও আনন্দময় বার্ষিকী, আমার প্রিয়! তোমার সকল ইচ্ছা পূরণ হোক, এবং এই দিনটি তোমাদের দুজনের জন্যই সুখের জীবনের সূচনা হোক!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -172,7 +173,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী, বন্ধুরা! গ্রীষ্মের দিনে তোমাদের ভালোবাসা সবসময় রোদের চেয়েও উজ্জ্বল হোক। আগামী বছরগুলিতে আরও হাসি, আলিঙ্গন এবং বৈবাহিক সুখের জন্য শুভকামনা!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -186,7 +187,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'সর্বশক্তিমান ঈশ্বর তাঁর ঐশ্বরিক শক্তি ও করুণার মাধ্যমে তোমাদের বন্ধনকে আরও দৃঢ় এবং চিরস্থায়ী করুন। তোমাদের দুজনেরই সুখী বিবাহিত জীবন কামনা করছি। শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -200,7 +201,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী প্রিয় কন্যা এবং জামাই! তোমাদের ভালোবাসা তোমাদের আগের চেয়েও শক্তিশালী করে তুলুক। তোমাদের জন্য অনেক সুন্দর আশীর্বাদ এবং শুভকামনা রইল।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -214,7 +215,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমাদের বিবাহবার্ষিকীর জন্য অভিনন্দন। তোমরা সত্যিই স্বর্গে তৈরি এক জোড়া। তোমরা দুই প্রেমিক-প্রেমিকা সর্বদা সুখী এবং ভালোবাসায় আবদ্ধ থাকো।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -228,7 +229,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমাদের বিয়ে আমার দেখা সবচেয়ে সুন্দর বন্ধনগুলোর মধ্যে একটি। একে এত শক্তিশালী করে তোলার জন্য তোমাদের অনেক প্রশংসা প্রাপ্য। শুভ বার্ষিকী',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -241,7 +242,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তুমি আমার সেই হারিয়ে যাওয়া অংশ, আর আজই আমি সেটা খুঁজে পেয়েছি। তুমি আমাকে সম্পূর্ণ করেছো, প্রিয়তমা। আমি তোমাকে অনেক ভালোবাসি এবং তোমার সাথে বৃদ্ধ হওয়ার আশা করি। তোমাকে শুভ বার্ষিকীর শুভেচ্ছা!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -254,7 +255,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমাদের বিয়ে শুরু হওয়ার পর পর্যন্ত আমি জানতাম না যে আমি কতটা ভাগ্যবান।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -267,7 +268,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'সবকিছুর জন্য ধন্যবাদ, আমার ভালোবাসা। শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -280,7 +281,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'বার্ষিকীর শুভেচ্ছা! তোমার সারা জীবনের ভালোবাসা এবং সুখ কামনা করছি।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -293,7 +294,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমাকে আমার স্বামী হিসেবে পেয়ে খুব ভালো লাগছে। শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -306,7 +307,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমার ভালোবাসা, তুমি আমার জীবন এবং ভালোবাসাকে শক্তিশালী করো! শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -319,7 +320,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমার চেয়ে বিশেষ আর কিছু নেই, আমার ভালোবাসা! শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -332,7 +333,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'অসাধারণ বাবা-মায়ের জন্য শুভ বার্ষিকী! ঈশ্বর তোমাদের দুজনের মঙ্গল করুন!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -345,7 +346,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আজ তুমি যে ভালোবাসা এবং সুখ অনুভব করছো তা বছরের পর বছর ধরে উজ্জ্বল হোক।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -358,7 +359,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমাদের পরিবারের এই উত্তেজনাপূর্ণ এবং আনন্দের দিনে তোমাদের দুজনকেই অনেক ভালোবাসা এবং আনন্দ।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -371,7 +372,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'জীবন উত্থান-পতন নিয়ে আসে, কিন্তু তোমার মতো ভালোবাসা সবকিছুকে মূল্যবান করে তোলে। একসাথে শক্তিশালীভাবে এগিয়ে চলুন। শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -384,7 +385,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'বিয়ে হলো শেখা এবং একসাথে বেড়ে ওঠার এক যাত্রা। তোমরা দুজনেই দেখিয়েছো পাশাপাশি হাঁটার অর্থ কী। শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -397,7 +398,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'ভালোবাসা পূর্ণতা সম্পর্কে নয়। এটা ঝড়ের সাথে লড়াই করে রোদের আলোয় একসাথে হাসি। তোমাকে অনেক অনেক শুভেচ্ছা!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -410,7 +411,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'সব বছর সহজ নয়, কিন্তু তোমার যাত্রা এখনও গুরুত্বপূর্ণ। এই বার্ষিকীতে ভালোবাসা এবং শক্তি প্রেরণ করছি।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -423,7 +424,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী! আশা করি তুমি সর্বশক্তিমানের কৃপায় আশীর্বাদপ্রাপ্ত হও এবং একটি সুন্দর সম্পর্ককে একটি মাইলফলকে উন্নীত করতে পারো। তোমার জন্য সত্যিই খুশি।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -436,7 +437,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'ভালোবাসা কেবল একটি অনুভূতি নয়, বরং একটি পছন্দ, তা প্রমাণ করার জন্য আরও একটি বছর। দারুন!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -449,7 +450,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আজ সেই দিন যেদিন আমি তোমার হয়ে গেলাম আর তুমি সারাজীবনের জন্য আমার হয়ে গেলে। আমাদের বিবাহবার্ষিকীর শুভেচ্ছা 💖💑',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -462,7 +463,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী, আমার সুন্দরী স্ত্রী! তোমার ভালোবাসা আমাকে স্থির রেখেছে। তোমাকে প্রতিদিন আরও ভালোবাসি!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -475,7 +476,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী, আমার ভালোবাসা! তুমিই আমার সব কিছু যা আমি চেয়েছিলাম। নিঃসন্দেহে কেন একসাথে কাটানো বছরগুলো খুব ভালো কেটেছে।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -488,7 +489,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমার সেরা চিয়ারলিডার হওয়ার জন্য ধন্যবাদ। তোমাকে অসীম ভালোবাসা। শুভ বিবাহবার্ষিকী।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -501,7 +502,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'যিনি আমার ফোন আলোকিত করেন এবং আমার হৃদয় ভরে দেন, তাকে শুভ বার্ষিকী।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -514,7 +515,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'প্রতিটি বার্ষিকীর সাথে ভালোবাসা আরও শক্তিশালী হয়। 🌹 #একসাথে চিরকাল',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -527,7 +528,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমি তোমাকে ভালোবাসি আর তুমিও আমাকে ভালোবাসো। আমার হৃদয়ে, তুমি সবসময় থাকবে। এখানে হোক বা সেখানে, কাছে হোক বা দূরে, আমার ভালোবাসা তুমি যেখানেই থাকো না কেন ❤️।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -540,7 +541,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমার মুখের হাসি যেন কখনো ম্লান না হয়। শুভ বার্ষিকী প্রিয় 💖✨',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -553,7 +554,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'যদিও উত্থান-পতন এসেছে, তবুও আমি সবসময় বিশ্বাস করেছিলাম যে আমরা এতদূর যাব। আরও একটি বছরের জন্য শুভেচ্ছা!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -566,7 +567,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী, পৃথিবীর বুকে আমার ছোট্ট স্বর্গ! আমি জীবনের যেকোনো কিছুর চেয়ে তোমাকেই বেছে নেব।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -579,7 +580,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'একসাথে অসাধারণ সব বছর কাটানোর জন্য ধন্যবাদ জানাতে এখানে এসেছি। শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -592,7 +593,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী। তোমাদের মধ্যে এই প্রেম যুগ যুগ ধরে টিকে থাকুক।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -605,7 +606,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'সেই মানুষটিকে শুভ বার্ষিকী, যে আমাকে আমার পা থেকে সরিয়ে চিরকালের প্রেমের গল্পে নিয়ে গিয়েছিল!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -618,7 +619,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী! টেক্সট থেকে ভিডিও কল, আমরা ডিজিটাল জগতে বাস্তব কিছু তৈরি করেছি।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -631,7 +632,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমাদের বন্ধন প্রমাণ করে যে সত্যিকারের ভালোবাসা প্রতিটি ঝড়কে মোকাবেলা করে। তার জন্য শুভকামনা! ❤️',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -644,7 +645,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বার্ষিকী! টেক্সট থেকে ভিডিও কল, আমরা ডিজিটাল জগতে বাস্তব কিছু তৈরি করেছি।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -657,7 +658,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমাদের বন্ধন প্রমাণ করে যে সত্যিকারের ভালোবাসা প্রতিটি ঝড়কে মোকাবেলা করে। তার জন্য শুভকামনা! ❤️',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -670,7 +671,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'ভালোবাসা, বেড়ে ওঠা এবং সুন্দর মুহূর্তগুলির আরও একটি বছর। আরও অনেকের জন্য রইল শুভকামনা! 🥂',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -683,7 +684,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমাকে আমার সকল আশীর্বাদ এবং উষ্ণ শুভেচ্ছা জানাচ্ছি। দুই বছর কেটে গেছে, আরও অনেক বছর বাকি। দ্বিতীয় বার্ষিকীর শুভেচ্ছা।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -696,7 +697,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমাদের ভালোবাসা বসন্তে ড্যাফোডিলের মতো বেড়ে উঠুক এবং প্রস্ফুটিত হোক। তুমি আমার জীবনে ঘটে যাওয়া সেরা জিনিস। শুভ তৃতীয় বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -709,7 +710,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমি আশা করি আগামী বছরগুলো আমাদের জন্য আগের বছরগুলোর মতোই রঙিন হবে। আমার ভালোবাসার ৫ম বার্ষিকীর শুভেচ্ছা!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -722,7 +723,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'শুভ বিবাহবার্ষিকী! এই সুন্দর দিনে, তোমার সকল ইচ্ছা পূরণ হোক, এবং তোমার বিবাহের আরও অনেক বছর সুখী হোক এই কামনা করি।',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -735,7 +736,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমাদের বিবাহ, ভালোবাসা এবং পরিবারের একসাথে থাকার {বছরব্যাপী} শুভ বার্ষিকী। তোমার সাথে প্রতিটি মুহূর্ত জাদুকরী এবং বিশেষ! শুভ বার্ষিকী আমার ভালোবাসা ❤️',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -748,7 +749,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তুমি আমার অস্তিত্বের সুর, এবং আমাদের সুন্দর প্রেমের গল্পের জন্য আমি চির কৃতজ্ঞ। শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -761,7 +762,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'আমি প্রতিদিন তোমার পাশে জেগে উঠতে চাই, প্রতিটি পৃথিবীতে এবং প্রতিটি মহাবিশ্বে। শুভ বার্ষিকী!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -774,7 +775,7 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'তোমার সাথে এত বছর কাটানোর পরেও, তুমি আমার উপর ক্লান্ত হওনি। আমি আশা করি আমরা তোমার বাকি জীবন এভাবেই থাকব। আরও একটি বছরের জন্য শুভকামনা!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
             },
           ),
           ReadSms(
@@ -787,11 +788,546 @@ class AnniversarySms extends StatelessWidget {
               Clipboard.setData(
                   ClipboardData(
                     text: 'জীবনের ঝড়ের মাঝেও আমাদের ভালোবাসা যেন অনেকভাবে বিকশিত হয়। আমার একমাত্র প্রেমিককে শুভ বার্ষিকীর শুভেচ্ছা!',));
-              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'ভালোবাসা মানে এত দিন, মাস, বা বছর একসাথে থাকা নয়। ভালোবাসা হলো একে অপরকে প্রতিদিন কতটা ভালোবাসো। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('ভালোবাসা মানে এত দিন, মাস, বা বছর একসাথে থাকা নয়। ভালোবাসা হলো একে অপরকে প্রতিদিন কতটা ভালোবাসো। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'ভালোবাসা মানে এত দিন, মাস, বা বছর একসাথে থাকা নয়। ভালোবাসা হলো একে অপরকে প্রতিদিন কতটা ভালোবাসো। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'সূর্যাস্ত এবং স্বপ্ন ভাগাভাগি করে নেওয়ার আরও একটি বছর। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('সূর্যাস্ত এবং স্বপ্ন ভাগাভাগি করে নেওয়ার আরও একটি বছর। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'সূর্যাস্ত এবং স্বপ্ন ভাগাভাগি করে নেওয়ার আরও একটি বছর। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'প্রতিটি বার্ষিকী যেন তোমাদের মনে করিয়ে দেয় যে তোমাদের হৃদয় কতটা গভীরভাবে সংযুক্ত। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('প্রতিটি বার্ষিকী যেন তোমাদের মনে করিয়ে দেয় যে তোমাদের হৃদয় কতটা গভীরভাবে সংযুক্ত। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'প্রতিটি বার্ষিকী যেন তোমাদের মনে করিয়ে দেয় যে তোমাদের হৃদয় কতটা গভীরভাবে সংযুক্ত। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'সত্যিকারের ভালোবাসা জোরে নয়, অবিচল। তোমরা দুজনেই এর প্রতীক। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('সত্যিকারের ভালোবাসা জোরে নয়, অবিচল। তোমরা দুজনেই এর প্রতীক। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'সত্যিকারের ভালোবাসা জোরে নয়, অবিচল। তোমরা দুজনেই এর প্রতীক। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমাদের একসাথে যাত্রা এমন মুহূর্ত দিয়ে তৈরি যা বেশিরভাগ মানুষ কেবল স্বপ্ন দেখে। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমাদের একসাথে যাত্রা এমন মুহূর্ত দিয়ে তৈরি যা বেশিরভাগ মানুষ কেবল স্বপ্ন দেখে। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমাদের একসাথে যাত্রা এমন মুহূর্ত দিয়ে তৈরি যা বেশিরভাগ মানুষ কেবল স্বপ্ন দেখে। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমার ভালোবাসা আমাদের মনে করিয়ে দেয় যে জীবনের সেরা জিনিসগুলো ভাগ করে নেওয়া হয়। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমার ভালোবাসা আমাদের মনে করিয়ে দেয় যে জীবনের সেরা জিনিসগুলো ভাগ করে নেওয়া হয়। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার ভালোবাসা আমাদের মনে করিয়ে দেয় যে জীবনের সেরা জিনিসগুলো ভাগ করে নেওয়া হয়। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'প্রতি বছর একে অপরের প্রতি ভালোবাসা বিকশিত ও বৃদ্ধি পাওয়া দেখার চেয়ে ভালো আর কিছু হতে পারে না। অসাধারণ এক দম্পতির জন্য শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('প্রতি বছর একে অপরের প্রতি ভালোবাসা বিকশিত ও বৃদ্ধি পাওয়া দেখার চেয়ে ভালো আর কিছু হতে পারে না। অসাধারণ এক দম্পতির জন্য শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'প্রতি বছর একে অপরের প্রতি ভালোবাসা বিকশিত ও বৃদ্ধি পাওয়া দেখার চেয়ে ভালো আর কিছু হতে পারে না। অসাধারণ এক দম্পতির জন্য শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমরা দুজন একে অপরের জন্য তৈরি এবং এটা প্রমাণ করে! আমার প্রিয় দম্পতিদের একজনকে শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমরা দুজন একে অপরের জন্য তৈরি এবং এটা প্রমাণ করে! আমার প্রিয় দম্পতিদের একজনকে শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমরা দুজন একে অপরের জন্য তৈরি এবং এটা প্রমাণ করে! আমার প্রিয় দম্পতিদের একজনকে শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমাদের মতো আর কোনও দম্পতি একে অপরের পরিপূরক হতে পারে না। বিবাহকে এত সহজ করে তোলার জন্য এই সুন্দর দম্পতির জন্য শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমাদের মতো আর কোনও দম্পতি একে অপরের পরিপূরক হতে পারে না। বিবাহকে এত সহজ করে তোলার জন্য এই সুন্দর দম্পতির জন্য শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমাদের মতো আর কোনও দম্পতি একে অপরের পরিপূরক হতে পারে না। বিবাহকে এত সহজ করে তোলার জন্য এই সুন্দর দম্পতির জন্য শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমরা একে অপরের দিকে যেভাবে তাকাও, তাতেই বোঝা যায় যে তোমরা একে অপরকে কতটা সম্মান করো এবং ভালোবাসো। প্রকৃত ভালোবাসা কেমন হয়, তার উজ্জ্বল উদাহরণ হয়ে থাকো। শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমরা একে অপরের দিকে যেভাবে তাকাও, তাতেই বোঝা যায় যে তোমরা একে অপরকে কতটা সম্মান করো এবং ভালোবাসো। প্রকৃত ভালোবাসা কেমন হয়, তার উজ্জ্বল উদাহরণ হয়ে থাকো। শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমরা একে অপরের দিকে যেভাবে তাকাও, তাতেই বোঝা যায় যে তোমরা একে অপরকে কতটা সম্মান করো এবং ভালোবাসো। প্রকৃত ভালোবাসা কেমন হয়, তার উজ্জ্বল উদাহরণ হয়ে থাকো। শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'কে বলেছে বিয়ে কঠিন? তোমরা না, কারণ তোমরা এটাকে একেবারেই সহজ করে তুলেছ। শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('কে বলেছে বিয়ে কঠিন? তোমরা না, কারণ তোমরা এটাকে একেবারেই সহজ করে তুলেছ। শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'কে বলেছে বিয়ে কঠিন? তোমরা না, কারণ তোমরা এটাকে একেবারেই সহজ করে তুলেছ। শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'কি সুন্দর আর ভালোবাসার জুটি। তোমাদের সারাজীবন ভালোবাসার কামনা করছি। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('কি সুন্দর আর ভালোবাসার জুটি। তোমাদের সারাজীবন ভালোবাসার কামনা করছি। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'কি সুন্দর আর ভালোবাসার জুটি। তোমাদের সারাজীবন ভালোবাসার কামনা করছি। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'আমাকে পৃথিবীতে সবচেয়ে সুখী মানুষ করে তোলার জন্য দায়ী মহিলাকে শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('আমাকে পৃথিবীতে সবচেয়ে সুখী মানুষ করে তোলার জন্য দায়ী মহিলাকে শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমাকে পৃথিবীতে সবচেয়ে সুখী মানুষ করে তোলার জন্য দায়ী মহিলাকে শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমার সাথে বৃদ্ধ হওয়ার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি। তুমি আমার প্রিয় মানুষ এবং আমি সবচেয়ে ভাগ্যবান। শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমার সাথে বৃদ্ধ হওয়ার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি। তুমি আমার প্রিয় মানুষ এবং আমি সবচেয়ে ভাগ্যবান। শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার সাথে বৃদ্ধ হওয়ার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি। তুমি আমার প্রিয় মানুষ এবং আমি সবচেয়ে ভাগ্যবান। শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'এর চেয়ে নিখুঁত স্ত্রী আমি স্বপ্নেও ভাবতে পারিনি। তুমিই সবকিছু, তারপরও কিছু। আমার জীবনের ভালোবাসার জন্য শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('এর চেয়ে নিখুঁত স্ত্রী আমি স্বপ্নেও ভাবতে পারিনি। তুমিই সবকিছু, তারপরও কিছু। আমার জীবনের ভালোবাসার জন্য শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'এর চেয়ে নিখুঁত স্ত্রী আমি স্বপ্নেও ভাবতে পারিনি। তুমিই সবকিছু, তারপরও কিছু। আমার জীবনের ভালোবাসার জন্য শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'শুভ বার্ষিকী! আমি খুব খুশি যে আমি আমার সবচেয়ে ভালো বন্ধুকে বিয়ে করতে পেরেছি।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('শুভ বার্ষিকী! আমি খুব খুশি যে আমি আমার সবচেয়ে ভালো বন্ধুকে বিয়ে করতে পেরেছি।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'শুভ বার্ষিকী! আমি খুব খুশি যে আমি আমার সবচেয়ে ভালো বন্ধুকে বিয়ে করতে পেরেছি।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'যেকোনো কিছুর মতোই, বিবাহেরও উত্থান-পতন থাকে। ভালো-মন্দ সময়ে সবসময় আমার পাশে থাকার জন্য ধন্যবাদ। আমি তোমাকে অসীম এবং তার পরেও ভালোবাসি। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('যেকোনো কিছুর মতোই, বিবাহেরও উত্থান-পতন থাকে। ভালো-মন্দ সময়ে সবসময় আমার পাশে থাকার জন্য ধন্যবাদ। আমি তোমাকে অসীম এবং তার পরেও ভালোবাসি। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'যেকোনো কিছুর মতোই, বিবাহেরও উত্থান-পতন থাকে। ভালো-মন্দ সময়ে সবসময় আমার পাশে থাকার জন্য ধন্যবাদ। আমি তোমাকে অসীম এবং তার পরেও ভালোবাসি। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তুমি আমার আত্মার সাথী এবং আমি জীবনে তোমাকে ছাড়া এক মুহূর্তও কল্পনা করতে পারি না। শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তুমি আমার আত্মার সাথী এবং আমি জীবনে তোমাকে ছাড়া এক মুহূর্তও কল্পনা করতে পারি না। শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তুমি আমার আত্মার সাথী এবং আমি জীবনে তোমাকে ছাড়া এক মুহূর্তও কল্পনা করতে পারি না। শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমার প্রতি আমার ভালোবাসা প্রতিটি নিঃশ্বাসের সাথে সাথে আরও গভীর হয়। তুমি আমার প্রিয় মানুষ।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমার প্রতি আমার ভালোবাসা প্রতিটি নিঃশ্বাসের সাথে সাথে আরও গভীর হয়। তুমি আমার প্রিয় মানুষ।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার প্রতি আমার ভালোবাসা প্রতিটি নিঃশ্বাসের সাথে সাথে আরও গভীর হয়। তুমি আমার প্রিয় মানুষ।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তুমি শুধু তোমার সঙ্গী হয়ে থেকে প্রতিটি দিনকে আরও সুন্দর করে তুলেছো। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তুমি শুধু তোমার সঙ্গী হয়ে থেকে প্রতিটি দিনকে আরও সুন্দর করে তুলেছো। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তুমি শুধু তোমার সঙ্গী হয়ে থেকে প্রতিটি দিনকে আরও সুন্দর করে তুলেছো। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমার সাথে থাকা প্রতিটি দিন আমাকে মনে করিয়ে দেয় যে আমি কতটা ভাগ্যবান যে আমি এত অসাধারণ কাউকে ভালোবাসি এবং তার ভালোবাসা পাই।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমার সাথে থাকা প্রতিটি দিন আমাকে মনে করিয়ে দেয় যে আমি কতটা ভাগ্যবান যে আমি এত অসাধারণ কাউকে ভালোবাসি এবং তার ভালোবাসা পাই।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার সাথে থাকা প্রতিটি দিন আমাকে মনে করিয়ে দেয় যে আমি কতটা ভাগ্যবান যে আমি এত অসাধারণ কাউকে ভালোবাসি এবং তার ভালোবাসা পাই।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমার হৃদয়, তোমার শক্তি এবং তুমি যেভাবে এতটা ভালোবাসো, তার আমি প্রশংসা করি। তোমার সঙ্গী হতে পেরে আমি গর্বিত।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমার হৃদয়, তোমার শক্তি এবং তুমি যেভাবে এতটা ভালোবাসো, তার আমি প্রশংসা করি। তোমার সঙ্গী হতে পেরে আমি গর্বিত।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার হৃদয়, তোমার শক্তি এবং তুমি যেভাবে এতটা ভালোবাসো, তার আমি প্রশংসা করি। তোমার সঙ্গী হতে পেরে আমি গর্বিত।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'পৃথিবীর সকল প্রেমের গল্পের মধ্যে, আমাদের প্রেমের গল্পটি সবসময় আমার প্রিয় হবে।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('পৃথিবীর সকল প্রেমের গল্পের মধ্যে, আমাদের প্রেমের গল্পটি সবসময় আমার প্রিয় হবে।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'পৃথিবীর সকল প্রেমের গল্পের মধ্যে, আমাদের প্রেমের গল্পটি সবসময় আমার প্রিয় হবে।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'আমার জীবনের ভালোবাসার জন্মদিনের শুভেচ্ছা। আগামী আরও অনেক সুখের বছর কামনা করছি।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('আমার জীবনের ভালোবাসার জন্মদিনের শুভেচ্ছা। আগামী আরও অনেক সুখের বছর কামনা করছি।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমার জীবনের ভালোবাসার জন্মদিনের শুভেচ্ছা। আগামী আরও অনেক সুখের বছর কামনা করছি।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'একসাথে, আমরা আমাদের নিজস্ব সুন্দর মহাবিশ্ব তৈরি করেছি। কী আছে তা দেখার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('একসাথে, আমরা আমাদের নিজস্ব সুন্দর মহাবিশ্ব তৈরি করেছি। কী আছে তা দেখার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'একসাথে, আমরা আমাদের নিজস্ব সুন্দর মহাবিশ্ব তৈরি করেছি। কী আছে তা দেখার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'এই সবের মধ্যে আমার অবিচল থাকার জন্য ধন্যবাদ। তোমাকে ছাড়া আমার জীবন অসম্ভব। শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('এই সবের মধ্যে আমার অবিচল থাকার জন্য ধন্যবাদ। তোমাকে ছাড়া আমার জীবন অসম্ভব। শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'এই সবের মধ্যে আমার অবিচল থাকার জন্য ধন্যবাদ। তোমাকে ছাড়া আমার জীবন অসম্ভব। শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'আরও এক বছর হয়ে গেল, আর তুমি এখনও আমাকে বিয়ে করোনি! আমি তোমাকে ভালোবাসি প্রিয়তমা। শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('আরও এক বছর হয়ে গেল, আর তুমি এখনও আমাকে বিয়ে করোনি! আমি তোমাকে ভালোবাসি প্রিয়তমা। শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আরও এক বছর হয়ে গেল, আর তুমি এখনও আমাকে বিয়ে করোনি! আমি তোমাকে ভালোবাসি প্রিয়তমা। শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'শুভ বার্ষিকী। তুমি আমাকে দেখিয়েছ সত্যিকারের অংশীদারিত্বের অর্থ কী এবং এর জন্য আমি চির কৃতজ্ঞ। আমি তোমাকে ভালোবাসি।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('শুভ বার্ষিকী। তুমি আমাকে দেখিয়েছ সত্যিকারের অংশীদারিত্বের অর্থ কী এবং এর জন্য আমি চির কৃতজ্ঞ। আমি তোমাকে ভালোবাসি।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'শুভ বার্ষিকী। তুমি আমাকে দেখিয়েছ সত্যিকারের অংশীদারিত্বের অর্থ কী এবং এর জন্য আমি চির কৃতজ্ঞ। আমি তোমাকে ভালোবাসি।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'আমি ভাগ্যবান যে জীবন নামক এই যাত্রাটা তোমার সাথে ভাগ করে নিতে পেরেছি। আমি অন্য কোনওভাবে এটা চাই না। শুভ বার্ষিকী, আমার ভালোবাসা।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('আমি ভাগ্যবান যে জীবন নামক এই যাত্রাটা তোমার সাথে ভাগ করে নিতে পেরেছি। আমি অন্য কোনওভাবে এটা চাই না। শুভ বার্ষিকী, আমার ভালোবাসা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমি ভাগ্যবান যে জীবন নামক এই যাত্রাটা তোমার সাথে ভাগ করে নিতে পেরেছি। আমি অন্য কোনওভাবে এটা চাই না। শুভ বার্ষিকী, আমার ভালোবাসা।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'আমি তোমাকে যতই ভালোবাসি, ততই ভালোবাসি। জীবনের প্রতিটি ক্ষেত্রে তোমাকে প্রস্ফুটিত হতে দেখতে আমার খুব ভালো লাগে। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('আমি তোমাকে যতই ভালোবাসি, ততই ভালোবাসি। জীবনের প্রতিটি ক্ষেত্রে তোমাকে প্রস্ফুটিত হতে দেখতে আমার খুব ভালো লাগে। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমি তোমাকে যতই ভালোবাসি, ততই ভালোবাসি। জীবনের প্রতিটি ক্ষেত্রে তোমাকে প্রস্ফুটিত হতে দেখতে আমার খুব ভালো লাগে। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'কষ্ট আর কষ্টের মাঝেও, আমি তোমাকে সবসময় ভালোবাসবো। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('কষ্ট আর কষ্টের মাঝেও, আমি তোমাকে সবসময় ভালোবাসবো। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'কষ্ট আর কষ্টের মাঝেও, আমি তোমাকে সবসময় ভালোবাসবো। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তুমি সবসময় আমার জন্য পাথর হয়ে থাকবে! আরও একটি বছর আমার সাথে কাটানোর জন্য ধন্যবাদ। শুভ বার্ষিকী, আমার ভালোবাসা।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তুমি সবসময় আমার জন্য পাথর হয়ে থাকবে! আরও একটি বছর আমার সাথে কাটানোর জন্য ধন্যবাদ। শুভ বার্ষিকী, আমার ভালোবাসা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তুমি সবসময় আমার জন্য পাথর হয়ে থাকবে! আরও একটি বছর আমার সাথে কাটানোর জন্য ধন্যবাদ। শুভ বার্ষিকী, আমার ভালোবাসা।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমার ভালোবাসা পাওয়াটা সত্যিই অসাধারণ একটা অনুভূতি। শুভ বার্ষিকী, প্রিয়তমা।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমার ভালোবাসা পাওয়াটা সত্যিই অসাধারণ একটা অনুভূতি। শুভ বার্ষিকী, প্রিয়তমা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার ভালোবাসা পাওয়াটা সত্যিই অসাধারণ একটা অনুভূতি। শুভ বার্ষিকী, প্রিয়তমা।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তুমি আমার জীবনে অনেক আনন্দ এনেছো! তোমাকে ছাড়া আমি একটা দিনও কল্পনা করতে পারি না। শুভ বার্ষিকী, সোনা।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তুমি আমার জীবনে অনেক আনন্দ এনেছো! তোমাকে ছাড়া আমি একটা দিনও কল্পনা করতে পারি না। শুভ বার্ষিকী, সোনা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তুমি আমার জীবনে অনেক আনন্দ এনেছো! তোমাকে ছাড়া আমি একটা দিনও কল্পনা করতে পারি না। শুভ বার্ষিকী, সোনা।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'আমার পরিচিত সবচেয়ে শক্তিশালী, সবচেয়ে চিন্তাশীল এবং যত্নশীল ব্যক্তিকে শুভ বার্ষিকী। শুভ বার্ষিকী, প্রিয়।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('আমার পরিচিত সবচেয়ে শক্তিশালী, সবচেয়ে চিন্তাশীল এবং যত্নশীল ব্যক্তিকে শুভ বার্ষিকী। শুভ বার্ষিকী, প্রিয়।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমার পরিচিত সবচেয়ে শক্তিশালী, সবচেয়ে চিন্তাশীল এবং যত্নশীল ব্যক্তিকে শুভ বার্ষিকী। শুভ বার্ষিকী, প্রিয়।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমার সাথে জীবন পৃথিবীর স্বর্গের মতো। আমি তোমাকে অনেক ভালোবাসি! শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমার সাথে জীবন পৃথিবীর স্বর্গের মতো। আমি তোমাকে অনেক ভালোবাসি! শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার সাথে জীবন পৃথিবীর স্বর্গের মতো। আমি তোমাকে অনেক ভালোবাসি! শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমরা দুজনেই সত্যিকারের অনুপ্রেরণা! বিয়েকে সহজ করে তোলার জন্য শুভেচ্ছা।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমরা দুজনেই সত্যিকারের অনুপ্রেরণা! বিয়েকে সহজ করে তোলার জন্য শুভেচ্ছা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমরা দুজনেই সত্যিকারের অনুপ্রেরণা! বিয়েকে সহজ করে তোলার জন্য শুভেচ্ছা।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমাদের ছাড়া পারিবারিক মিলনমেলা আগের মতো হতো না। আমার প্রিয় দম্পতিদের একজনকে শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমাদের ছাড়া পারিবারিক মিলনমেলা আগের মতো হতো না। আমার প্রিয় দম্পতিদের একজনকে শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমাদের ছাড়া পারিবারিক মিলনমেলা আগের মতো হতো না। আমার প্রিয় দম্পতিদের একজনকে শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমার ভালোবাসা খুবই অনুপ্রেরণাদায়ক। তুমি সত্যিকারের ভালোবাসার নিখুঁত উদাহরণ। শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমার ভালোবাসা খুবই অনুপ্রেরণাদায়ক। তুমি সত্যিকারের ভালোবাসার নিখুঁত উদাহরণ। শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার ভালোবাসা খুবই অনুপ্রেরণাদায়ক। তুমি সত্যিকারের ভালোবাসার নিখুঁত উদাহরণ। শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'কি সুন্দর আর ভালোবাসার জুটি। তোমাদের সারাজীবন ভালোবাসার কামনা করছি। শুভ বার্ষিকী!',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('কি সুন্দর আর ভালোবাসার জুটি। তোমাদের সারাজীবন ভালোবাসার কামনা করছি। শুভ বার্ষিকী!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'কি সুন্দর আর ভালোবাসার জুটি। তোমাদের সারাজীবন ভালোবাসার কামনা করছি। শুভ বার্ষিকী!',));
+              Get.snackbar("Message", "Copied");
+            },
+          ),
+          ReadSms(
+            message: 'তোমাদের ভালোবাসা যেন জ্বলতে থাকে। আমার প্রিয় দম্পতিদের একজনকে শুভ বার্ষিকী।',
+            favoriteButton: () {},
+            shareButton: () {
+              Share.share('তোমাদের ভালোবাসা যেন জ্বলতে থাকে। আমার প্রিয় দম্পতিদের একজনকে শুভ বার্ষিকী।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমাদের ভালোবাসা যেন জ্বলতে থাকে। আমার প্রিয় দম্পতিদের একজনকে শুভ বার্ষিকী।',));
+              Get.snackbar("Message", "Copied");
             },
           ),
         ],
       ),
     );
   }
-}
+}*/
+
+

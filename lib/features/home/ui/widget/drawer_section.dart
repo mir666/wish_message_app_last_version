@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:wish_message_app/app/app_colors.dart';
+import 'package:wish_message_app/core/setting/ui/screens/privacy_policy_screen.dart';
 import 'package:wish_message_app/core/setting/ui/screens/setting_screen.dart';
 
 class DrawerSection extends StatelessWidget {
@@ -12,9 +14,10 @@ class DrawerSection extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
+          Spacer(),
           TextButton(
             onPressed: (){
-              Navigator.pushNamed(context, SettingScreen.name);
+              Get.offAndToNamed(SettingScreen.name);
             },
             child: Padding(
               padding: const EdgeInsets.all(16),
@@ -71,6 +74,33 @@ class DrawerSection extends StatelessWidget {
               ),
             ),
           ),
+          TextButton(
+            onPressed: (){
+              Get.offAndToNamed(PrivacyPolicyScreen.name);
+            },
+            child: Padding(
+              padding: const EdgeInsets.all(16),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Icon(Icons.warning_amber_outlined, size: 24, color: AppColors.drawerFavIconColor,),
+                      SizedBox(width: 12),
+                      Text(
+                        'প্রাইভেসি পলিসি',
+                        style: TextStyle(
+                          fontSize: 18,
+                          color: Colors.black,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Spacer(),
+          Spacer(),
         ],
       ),
     );

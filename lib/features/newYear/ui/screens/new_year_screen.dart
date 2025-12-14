@@ -21,7 +21,7 @@ class _NewYearScreenState extends State<NewYearScreen> {
           children: [
             Column(
               children: [
-                NewYearSms(),
+                //NewYearSms(),
                 SizedBox(height: 30),
               ],
             ),

@@ -1,5 +1,7 @@
+/*
 import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:wish_message_app/features/common/read_sms.dart';
 
@@ -624,8 +626,515 @@ class NewYearSms extends StatelessWidget {
               FlutterClipboard.copy('শিক্ষক, আপনার জন্য শুভকামনা রইলো। আপনি আপনার ছাত্রছাত্রীদের জন্য আশীর্বাদ এবং আমরা আপনাকে পেয়ে ভাগ্যবান। ঈশ্বর আপনার মঙ্গল করুন।');
             },
           ),
+          ReadSms(
+            message: 'শুভ নববর্ষ! পাতা উল্টানোর এবং অসাধারণ কিছু লেখার সময় এসেছে।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('শুভ নববর্ষ! পাতা উল্টানোর এবং অসাধারণ কিছু লেখার সময় এসেছে।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'শুভ নববর্ষ! পাতা উল্টানোর এবং অসাধারণ কিছু লেখার সময় এসেছে।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'নতুন বছর হলো একটা ফাঁকা বইয়ের মতো—কলম তোমার হাতে। একটা সুন্দর গল্প লেখো।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('নতুন বছর হলো একটা ফাঁকা বইয়ের মতো—কলম তোমার হাতে। একটা সুন্দর গল্প লেখো।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'নতুন বছর হলো একটা ফাঁকা বইয়ের মতো—কলম তোমার হাতে। একটা সুন্দর গল্প লেখো।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'অতীতকে ভুলে যাও, ক্ষমা করো এবং ২০২৬ সালে নতুন সুযোগকে স্বাগত জানাও।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('অতীতকে ভুলে যাও, ক্ষমা করো এবং ২০২৬ সালে নতুন সুযোগকে স্বাগত জানাও।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'অতীতকে ভুলে যাও, ক্ষমা করো এবং ২০২৬ সালে নতুন সুযোগকে স্বাগত জানাও।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'নতুন বছর সবকিছু ঠিক করার এবং একটি নতুন অধ্যায় শুরু করার আরেকটি সুযোগ নিয়ে আসে।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('নতুন বছর সবকিছু ঠিক করার এবং একটি নতুন অধ্যায় শুরু করার আরেকটি সুযোগ নিয়ে আসে।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'নতুন বছর সবকিছু ঠিক করার এবং একটি নতুন অধ্যায় শুরু করার আরেকটি সুযোগ নিয়ে আসে।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: '২০২৬ সাল হোক পরিবর্তনকে আলিঙ্গন করার এবং নির্ভীকভাবে তোমার স্বপ্নের পিছনে ছুটবার বছর।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('২০২৬ সাল হোক পরিবর্তনকে আলিঙ্গন করার এবং নির্ভীকভাবে তোমার স্বপ্নের পিছনে ছুটবার বছর।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: '২০২৬ সাল হোক পরিবর্তনকে আলিঙ্গন করার এবং নির্ভীকভাবে তোমার স্বপ্নের পিছনে ছুটবার বছর।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'নতুন বছরের প্রতিটি দিনই উজ্জ্বলভাবে আলোকিত হওয়ার এবং পূর্ণভাবে বেঁচে থাকার সুযোগ।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('নতুন বছরের প্রতিটি দিনই উজ্জ্বলভাবে আলোকিত হওয়ার এবং পূর্ণভাবে বেঁচে থাকার সুযোগ।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'নতুন বছরের প্রতিটি দিনই উজ্জ্বলভাবে আলোকিত হওয়ার এবং পূর্ণভাবে বেঁচে থাকার সুযোগ।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'এবার ২০২৬ সাল আপনার জন্য আগের চেয়েও উজ্জ্বল হয়ে উঠবে।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('এবার ২০২৬ সাল আপনার জন্য আগের চেয়েও উজ্জ্বল হয়ে উঠবে।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'এবার ২০২৬ সাল আপনার জন্য আগের চেয়েও উজ্জ্বল হয়ে উঠবে।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'আপনার কঠোর পরিশ্রম এবং নিষ্ঠার জন্য ধন্যবাদ - আপনার জন্য একটি অসাধারণ ২০২৬ সালের শুভেচ্ছা।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('আপনার কঠোর পরিশ্রম এবং নিষ্ঠার জন্য ধন্যবাদ - আপনার জন্য একটি অসাধারণ ২০২৬ সালের শুভেচ্ছা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আপনার কঠোর পরিশ্রম এবং নিষ্ঠার জন্য ধন্যবাদ - আপনার জন্য একটি অসাধারণ ২০২৬ সালের শুভেচ্ছা।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: '২০২৬ সাল আমাদের আরও কাছে আনুক, আমাদের ভালোবাসা আরও গভীর করুক এবং আমাদের দিনগুলিকে আনন্দে ভরিয়ে দিক।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('২০২৬ সাল আমাদের আরও কাছে আনুক, আমাদের ভালোবাসা আরও গভীর করুক এবং আমাদের দিনগুলিকে আনন্দে ভরিয়ে দিক।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: '২০২৬ সাল আমাদের আরও কাছে আনুক, আমাদের ভালোবাসা আরও গভীর করুক এবং আমাদের দিনগুলিকে আনন্দে ভরিয়ে দিক।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: '২০২৬ সালে একসাথে ভালোবাসা, আবেগ এবং অবিস্মরণীয় মুহূর্তগুলি এখানে।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('২০২৬ সালে একসাথে ভালোবাসা, আবেগ এবং অবিস্মরণীয় মুহূর্তগুলি এখানে।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: '২০২৬ সালে একসাথে ভালোবাসা, আবেগ এবং অবিস্মরণীয় মুহূর্তগুলি এখানে।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'আমার সঙ্গী, আমার ভালোবাসা, আমার সবচেয়ে ভালো বন্ধুকে নববর্ষের শুভেচ্ছা।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('আমার সঙ্গী, আমার ভালোবাসা, আমার সবচেয়ে ভালো বন্ধুকে নববর্ষের শুভেচ্ছা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমার সঙ্গী, আমার ভালোবাসা, আমার সবচেয়ে ভালো বন্ধুকে নববর্ষের শুভেচ্ছা।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'শুভ নববর্ষ! ২০২৬ সালে আমরা একসাথে যে স্মৃতিগুলো তৈরি করব তার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('শুভ নববর্ষ! ২০২৬ সালে আমরা একসাথে যে স্মৃতিগুলো তৈরি করব তার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'শুভ নববর্ষ! ২০২৬ সালে আমরা একসাথে যে স্মৃতিগুলো তৈরি করব তার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'আমার প্রিয়তমের কাছে: এই বছর আমাদের ভালোবাসা আরও শক্তিশালী হোক এবং আমাদের বন্ধন আরও গভীর হোক।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('আমার প্রিয়তমের কাছে: এই বছর আমাদের ভালোবাসা আরও শক্তিশালী হোক এবং আমাদের বন্ধন আরও গভীর হোক।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমার প্রিয়তমের কাছে: এই বছর আমাদের ভালোবাসা আরও শক্তিশালী হোক এবং আমাদের বন্ধন আরও গভীর হোক।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'আমার একমাত্র সন্তানের জন্য রোমান্স, অ্যাডভেঞ্চার এবং সুখের এক বছরের শুভেচ্ছা।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('আমার একমাত্র সন্তানের জন্য রোমান্স, অ্যাডভেঞ্চার এবং সুখের এক বছরের শুভেচ্ছা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমার একমাত্র সন্তানের জন্য রোমান্স, অ্যাডভেঞ্চার এবং সুখের এক বছরের শুভেচ্ছা।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'জীবনকে আরও সুন্দর করে তোলে, কেবল এতেই। আরও একটি অসাধারণ বছরের শুভেচ্ছা।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('জীবনকে আরও সুন্দর করে তোলে, কেবল এতেই। আরও একটি অসাধারণ বছরের শুভেচ্ছা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'জীবনকে আরও সুন্দর করে তোলে, কেবল এতেই। আরও একটি অসাধারণ বছরের শুভেচ্ছা।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'আসুন এই বছরটিকে হাসি, ভালোবাসা এবং স্বতঃস্ফূর্ত মুহূর্তগুলিতে পূর্ণ করি।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('আসুন এই বছরটিকে হাসি, ভালোবাসা এবং স্বতঃস্ফূর্ত মুহূর্তগুলিতে পূর্ণ করি।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আসুন এই বছরটিকে হাসি, ভালোবাসা এবং স্বতঃস্ফূর্ত মুহূর্তগুলিতে পূর্ণ করি।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'তোমার ১২ মাসের সাফল্য, ৫২ সপ্তাহের হাসি, ৩৬৫ দিন আনন্দ এবং অসংখ্য আনন্দের মুহূর্ত কামনা করছি।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('তোমার ১২ মাসের সাফল্য, ৫২ সপ্তাহের হাসি, ৩৬৫ দিন আনন্দ এবং অসংখ্য আনন্দের মুহূর্ত কামনা করছি।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার ১২ মাসের সাফল্য, ৫২ সপ্তাহের হাসি, ৩৬৫ দিন আনন্দ এবং অসংখ্য আনন্দের মুহূর্ত কামনা করছি।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'শুভ নববর্ষ! এই বছরটা উপভোগ করুন, প্রচুর পরিমাণে খাওয়া-দাওয়া, মদ্যপান এবং হাসি-ঠাট্টা করে কাটান।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('শুভ নববর্ষ! এই বছরটা উপভোগ করুন, প্রচুর পরিমাণে খাওয়া-দাওয়া, মদ্যপান এবং হাসি-ঠাট্টা করে কাটান।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'শুভ নববর্ষ! এই বছরটা উপভোগ করুন, প্রচুর পরিমাণে খাওয়া-দাওয়া, মদ্যপান এবং হাসি-ঠাট্টা করে কাটান।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'এখানে গত বছরের ভুলগুলো ভুলে যাওয়া এবং মজার ভুলগুলো পুনরাবৃত্তি করা।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('এখানে গত বছরের ভুলগুলো ভুলে যাওয়া এবং মজার ভুলগুলো পুনরাবৃত্তি করা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'এখানে গত বছরের ভুলগুলো ভুলে যাওয়া এবং মজার ভুলগুলো পুনরাবৃত্তি করা।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'শুভ নববর্ষ! আসুন স্টাইলে প্রশ্নবিদ্ধ সিদ্ধান্ত নিই।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('শুভ নববর্ষ! আসুন স্টাইলে প্রশ্নবিদ্ধ সিদ্ধান্ত নিই।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'শুভ নববর্ষ! আসুন স্টাইলে প্রশ্নবিদ্ধ সিদ্ধান্ত নিই।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'নতুন বছর জুড়ে ঈশ্বরের ভালোবাসা এবং করুণা আপনার পথ আলোকিত করুক।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('নতুন বছর জুড়ে ঈশ্বরের ভালোবাসা এবং করুণা আপনার পথ আলোকিত করুক।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'নতুন বছর জুড়ে ঈশ্বরের ভালোবাসা এবং করুণা আপনার পথ আলোকিত করুক।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'ঈশ্বর আপনার এবং আপনার পরিবারকে সুস্থতা, সুখ এবং সমৃদ্ধিতে ভরপুর একটি বছর আশীর্বাদ করুন।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('ঈশ্বর আপনার এবং আপনার পরিবারকে সুস্থতা, সুখ এবং সমৃদ্ধিতে ভরপুর একটি বছর আশীর্বাদ করুন।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'ঈশ্বর আপনার এবং আপনার পরিবারকে সুস্থতা, সুখ এবং সমৃদ্ধিতে ভরপুর একটি বছর আশীর্বাদ করুন।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'শুভ নববর্ষ, দাদী এবং দাদু! তোমাদের ভালোবাসা এবং প্রজ্ঞা আমাকে আজকের এই অবস্থানে পৌঁছে দিয়েছে। ধন্যবাদ।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('শুভ নববর্ষ, দাদী এবং দাদু! তোমাদের ভালোবাসা এবং প্রজ্ঞা আমাকে আজকের এই অবস্থানে পৌঁছে দিয়েছে। ধন্যবাদ।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'শুভ নববর্ষ, দাদী এবং দাদু! তোমাদের ভালোবাসা এবং প্রজ্ঞা আমাকে আজকের এই অবস্থানে পৌঁছে দিয়েছে। ধন্যবাদ।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'নতুন বছরকে স্বাগত জানাতে, আমার সর্বশ্রেষ্ঠ সমর্থনের জন্য আমি আন্তরিক কৃতজ্ঞতা প্রকাশ করতে চাই। ভালোবাসা এবং আনন্দে ভরে উঠুক আরও একটি বছর।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('নতুন বছরকে স্বাগত জানাতে, আমার সর্বশ্রেষ্ঠ সমর্থনের জন্য আমি আন্তরিক কৃতজ্ঞতা প্রকাশ করতে চাই। ভালোবাসা এবং আনন্দে ভরে উঠুক আরও একটি বছর।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'নতুন বছরকে স্বাগত জানাতে, আমার সর্বশ্রেষ্ঠ সমর্থনের জন্য আমি আন্তরিক কৃতজ্ঞতা প্রকাশ করতে চাই। ভালোবাসা এবং আনন্দে ভরে উঠুক আরও একটি বছর।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'তোমাকে একটি অসাধারণ নববর্ষের শুভেচ্ছা! আমাদের জন্য, এখন এবং চিরকাল।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('তোমাকে একটি অসাধারণ নববর্ষের শুভেচ্ছা! আমাদের জন্য, এখন এবং চিরকাল।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমাকে একটি অসাধারণ নববর্ষের শুভেচ্ছা! আমাদের জন্য, এখন এবং চিরকাল।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'এই নতুন বছরে প্রবেশ করার সাথে সাথে, আমার নোঙ্গর এবং আমার সুখের সর্বশ্রেষ্ঠ উৎস হওয়ার জন্য আমি কৃতজ্ঞতা প্রকাশ করতে চাই। ভালোবাসা এবং আনন্দে ভরা আরেকটি বছরের জন্য এখানে রইলাম!',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('এই নতুন বছরে প্রবেশ করার সাথে সাথে, আমার নোঙ্গর এবং আমার সুখের সর্বশ্রেষ্ঠ উৎস হওয়ার জন্য আমি কৃতজ্ঞতা প্রকাশ করতে চাই। ভালোবাসা এবং আনন্দে ভরা আরেকটি বছরের জন্য এখানে রইলাম!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'এই নতুন বছরে প্রবেশ করার সাথে সাথে, আমার নোঙ্গর এবং আমার সুখের সর্বশ্রেষ্ঠ উৎস হওয়ার জন্য আমি কৃতজ্ঞতা প্রকাশ করতে চাই। ভালোবাসা এবং আনন্দে ভরা আরেকটি বছরের জন্য এখানে রইলাম!',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'ভালোবাসা আর হাসিতে ভরপুর নতুন বছরের শুভেচ্ছা। আমি সবসময় তোমার পাশে থাকার এবং প্রতিটি স্মৃতিকে কাজে লাগানোর প্রতিশ্রুতি দিচ্ছি। শুভ নববর্ষ!',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('ভালোবাসা আর হাসিতে ভরপুর নতুন বছরের শুভেচ্ছা। আমি সবসময় তোমার পাশে থাকার এবং প্রতিটি স্মৃতিকে কাজে লাগানোর প্রতিশ্রুতি দিচ্ছি। শুভ নববর্ষ!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'ভালোবাসা আর হাসিতে ভরপুর নতুন বছরের শুভেচ্ছা। আমি সবসময় তোমার পাশে থাকার এবং প্রতিটি স্মৃতিকে কাজে লাগানোর প্রতিশ্রুতি দিচ্ছি। শুভ নববর্ষ!',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'শুভ নববর্ষ! আসুন আমরা আরও সক্রিয় হওয়ার সংকল্প নিই... আমাদের প্রিয় অনুষ্ঠানগুলি সক্রিয়ভাবে বারবার দেখার মাধ্যমে শুরু করি!',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('শুভ নববর্ষ! আসুন আমরা আরও সক্রিয় হওয়ার সংকল্প নিই... আমাদের প্রিয় অনুষ্ঠানগুলি সক্রিয়ভাবে বারবার দেখার মাধ্যমে শুরু করি!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'শুভ নববর্ষ! আসুন আমরা আরও সক্রিয় হওয়ার সংকল্প নিই... আমাদের প্রিয় অনুষ্ঠানগুলি সক্রিয়ভাবে বারবার দেখার মাধ্যমে শুরু করি!',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'শুভ নববর্ষ! তোমার অদ্ভুত আচরণ সহ্য করার ভান করে আমি আর আমারটা সহ্য করার ভান করার জন্য আরও একটি বছর। আমরা স্বর্গে তৈরি এক মিল!',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('শুভ নববর্ষ! তোমার অদ্ভুত আচরণ সহ্য করার ভান করে আমি আর আমারটা সহ্য করার ভান করার জন্য আরও একটি বছর। আমরা স্বর্গে তৈরি এক মিল!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'শুভ নববর্ষ! তোমার অদ্ভুত আচরণ সহ্য করার ভান করে আমি আর আমারটা সহ্য করার ভান করার জন্য আরও একটি বছর। আমরা স্বর্গে তৈরি এক মিল!',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'তোমাকে একটা জাদুকরী নববর্ষের শুভেচ্ছা! আসুন আমরা একসাথে প্রতিটি মুহূর্তকে লালন করি এবং সুখের জীবন তৈরি করি।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('তোমাকে একটা জাদুকরী নববর্ষের শুভেচ্ছা! আসুন আমরা একসাথে প্রতিটি মুহূর্তকে লালন করি এবং সুখের জীবন তৈরি করি।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমাকে একটা জাদুকরী নববর্ষের শুভেচ্ছা! আসুন আমরা একসাথে প্রতিটি মুহূর্তকে লালন করি এবং সুখের জীবন তৈরি করি।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'আমার জীবনের ভালোবাসাকে নববর্ষের শুভেচ্ছা! এই বছর তোমার সকল সাফল্যের জন্য আমি গর্বিত এবং পরবর্তী কী হবে তা দেখার জন্য অধীর আগ্রহে অপেক্ষা করছি।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('আমার জীবনের ভালোবাসাকে নববর্ষের শুভেচ্ছা! এই বছর তোমার সকল সাফল্যের জন্য আমি গর্বিত এবং পরবর্তী কী হবে তা দেখার জন্য অধীর আগ্রহে অপেক্ষা করছি।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমার জীবনের ভালোবাসাকে নববর্ষের শুভেচ্ছা! এই বছর তোমার সকল সাফল্যের জন্য আমি গর্বিত এবং পরবর্তী কী হবে তা দেখার জন্য অধীর আগ্রহে অপেক্ষা করছি।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'আসন্ন বছরটি আমাদের ভালোবাসার বিকাশের জন্য নতুন সুযোগ এবং অসংখ্য উপায় নিয়ে আসুক। এই সালে আমাদের জন্য যা কিছু আছে তা আলিঙ্গন করার জন্য এখানে রইল!',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('আসন্ন বছরটি আমাদের ভালোবাসার বিকাশের জন্য নতুন সুযোগ এবং অসংখ্য উপায় নিয়ে আসুক। এই সালে আমাদের জন্য যা কিছু আছে তা আলিঙ্গন করার জন্য এখানে রইল!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আসন্ন বছরটি আমাদের ভালোবাসার বিকাশের জন্য নতুন সুযোগ এবং অসংখ্য উপায় নিয়ে আসুক। এই সালে আমাদের জন্য যা কিছু আছে তা আলিঙ্গন করার জন্য এখানে রইল!',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'তোমাকে অসাধারণ নববর্ষের শুভেচ্ছা! তোমার সাথে আমার জীবন ভাগাভাগি করে নিতে পেরে আমি নিজেকে অত্যন্ত ভাগ্যবান মনে করছি। একসাথে, আমরা আমাদের পথে আসা যেকোনো চ্যালেঞ্জকে অতিক্রম করতে পারি। এবার সালকে আলিঙ্গন করা যাক। আমরা সামনের সমস্ত অভিযানের জন্য প্রস্তুত!',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('তোমাকে অসাধারণ নববর্ষের শুভেচ্ছা! তোমার সাথে আমার জীবন ভাগাভাগি করে নিতে পেরে আমি নিজেকে অত্যন্ত ভাগ্যবান মনে করছি। একসাথে, আমরা আমাদের পথে আসা যেকোনো চ্যালেঞ্জকে অতিক্রম করতে পারি। এবার সালকে আলিঙ্গন করা যাক। আমরা সামনের সমস্ত অভিযানের জন্য প্রস্তুত!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমাকে অসাধারণ নববর্ষের শুভেচ্ছা! তোমার সাথে আমার জীবন ভাগাভাগি করে নিতে পেরে আমি নিজেকে অত্যন্ত ভাগ্যবান মনে করছি। একসাথে, আমরা আমাদের পথে আসা যেকোনো চ্যালেঞ্জকে অতিক্রম করতে পারি। এবার সালকে আলিঙ্গন করা যাক। আমরা সামনের সমস্ত অভিযানের জন্য প্রস্তুত!',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'আমাদের বন্ধুত্বের জন্য আমি খুবই কৃতজ্ঞ, এবং আমি আশা করি আগামী বছরটি এটিকে সুন্দরভাবে বৃদ্ধি, শক্তিশালীকরণ এবং প্রস্ফুটিত করার জন্য আরও সুযোগ নিয়ে আসবে।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('আমাদের বন্ধুত্বের জন্য আমি খুবই কৃতজ্ঞ, এবং আমি আশা করি আগামী বছরটি এটিকে সুন্দরভাবে বৃদ্ধি, শক্তিশালীকরণ এবং প্রস্ফুটিত করার জন্য আরও সুযোগ নিয়ে আসবে।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমাদের বন্ধুত্বের জন্য আমি খুবই কৃতজ্ঞ, এবং আমি আশা করি আগামী বছরটি এটিকে সুন্দরভাবে বৃদ্ধি, শক্তিশালীকরণ এবং প্রস্ফুটিত করার জন্য আরও সুযোগ নিয়ে আসবে।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'এই বছর আমরা একসাথে সবচেয়ে ভালো সময় কাটিয়েছি। আশা করি, আগামী বছর আমাদের জন্য আরও মজা এবং অ্যাডভেঞ্চার নিয়ে আসবে।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('এই বছর আমরা একসাথে সবচেয়ে ভালো সময় কাটিয়েছি। আশা করি, আগামী বছর আমাদের জন্য আরও মজা এবং অ্যাডভেঞ্চার নিয়ে আসবে।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'এই বছর আমরা একসাথে সবচেয়ে ভালো সময় কাটিয়েছি। আশা করি, আগামী বছর আমাদের জন্য আরও মজা এবং অ্যাডভেঞ্চার নিয়ে আসবে।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'আমার প্রিয় মানুষটিকে, নতুন বছর আমাদের জন্য কী অপেক্ষা করছে তা দেখার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('আমার প্রিয় মানুষটিকে, নতুন বছর আমাদের জন্য কী অপেক্ষা করছে তা দেখার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'আমার প্রিয় মানুষটিকে, নতুন বছর আমাদের জন্য কী অপেক্ষা করছে তা দেখার জন্য আমি অধীর আগ্রহে অপেক্ষা করছি।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'তোমার স্বপ্ন পূরণের আরও এক বছর এগিয়ে আসো। এই বছরটা তোমার আকাঙ্ক্ষার সবকিছু হোক এবং আরও অনেক কিছু হোক!',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('তোমার স্বপ্ন পূরণের আরও এক বছর এগিয়ে আসো। এই বছরটা তোমার আকাঙ্ক্ষার সবকিছু হোক এবং আরও অনেক কিছু হোক!');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'তোমার স্বপ্ন পূরণের আরও এক বছর এগিয়ে আসো। এই বছরটা তোমার আকাঙ্ক্ষার সবকিছু হোক এবং আরও অনেক কিছু হোক!',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'কঠিনতম সময়েও কাজকে মজাদার এবং উপভোগ্য করে তোলার জন্য ধন্যবাদ। আসন্ন বছরটি আমাদের আরও ভালোবাসা এবং হাসি বয়ে আনুক।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('কঠিনতম সময়েও কাজকে মজাদার এবং উপভোগ্য করে তোলার জন্য ধন্যবাদ। আসন্ন বছরটি আমাদের আরও ভালোবাসা এবং হাসি বয়ে আনুক।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'কঠিনতম সময়েও কাজকে মজাদার এবং উপভোগ্য করে তোলার জন্য ধন্যবাদ। আসন্ন বছরটি আমাদের আরও ভালোবাসা এবং হাসি বয়ে আনুক।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
+          ReadSms(
+            message: 'সাফল্য, ভালোবাসা এবং অর্থপূর্ণ অভিজ্ঞতায় ভরা একটি বছরের জন্য শুভেচ্ছা।',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('সাফল্য, ভালোবাসা এবং অর্থপূর্ণ অভিজ্ঞতায় ভরা একটি বছরের জন্য শুভেচ্ছা।');
+            },
+            copyButton: () {
+              Clipboard.setData(
+                  ClipboardData(
+                    text: 'সাফল্য, ভালোবাসা এবং অর্থপূর্ণ অভিজ্ঞতায় ভরা একটি বছরের জন্য শুভেচ্ছা।',));
+              ScaffoldMessenger.of(context,).showSnackBar(SnackBar(content: Text("Copied!")));
+            },
+          ),
         ],
       ),
     );
   }
-}
+}*/

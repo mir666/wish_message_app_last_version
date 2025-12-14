@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:wish_message_app/app/assets_path.dart';
-import 'package:wish_message_app/core/setting/ui/screens/setting_screen.dart';
+import 'package:get/get.dart';
+import 'package:wish_message_app/features/common/category/category_card.dart';
+import 'package:wish_message_app/features/common/category/category_data.dart';
+import 'package:wish_message_app/features/common/category/category_page.dart';
+import 'package:wish_message_app/features/common/favorite_sms_screen.dart';
 import 'package:wish_message_app/features/home/ui/widget/drawer_section.dart';
-import 'package:wish_message_app/features/home/ui/widget/wish_category.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -20,41 +22,41 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       drawer: DrawerSection(),
       appBar: AppBar(
-        title: Center(child: Text('মেসেজ', style: textTheme.titleLarge)),
+        title: Center(child: Text('ঈদ মোবারক মেসেজ', style: textTheme.titleLarge)),
         actions: [
-          Padding(
-            padding: const EdgeInsets.all(16),
-            child: IconButton(
-              onPressed: () {
-                Navigator.pushNamed(context, SettingScreen.name);
-              },
-              icon: Icon(
-                Icons.settings,
-                size: 28,
-              ),
+          IconButton(
+            onPressed: () {
+              Navigator.pushNamed(context, FavoriteScreen.name);
+            },
+            icon: Icon(
+              Icons.favorite_border_outlined,
+              size: 28,
+              color: Colors.red,
             ),
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Column(children: [Image(image: AssetImage(AssetsPath.homeBanner))]),
-
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 20),
-                  child: Text(
-                    'মেসেজ শ্রেণী',
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
-                  ),
-                ),
-                WishCategory(),
-              ],
-            ),
-          ],
+      body: Padding(
+        padding: const EdgeInsets.all(12),
+        child: GridView.builder(
+          itemCount: categories.length,
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            mainAxisSpacing: 12,
+            crossAxisSpacing: 12,
+            childAspectRatio: 1,
+          ),
+          itemBuilder: (_, index) {
+            final category = categories[index];
+            return CategoryCard(
+              category: category,
+              onTap: () {
+                Get.to(
+                      () => CategoryPage(category: category.keyName),
+                );
+              },
+            );
+          },
         ),
       ),
     );

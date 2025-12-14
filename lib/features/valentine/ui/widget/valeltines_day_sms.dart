@@ -1,3 +1,4 @@
+/*
 import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -1325,8 +1326,28 @@ class ValentinesDaySms extends StatelessWidget {
               FlutterClipboard.copy('যদিও তুমি বিছানায় শুয়ে থাকো, তবুও আমি তোমাকে ভালোবাসি। শুভ ভালোবাসা দিবস!');
             },
           ),
+          ReadSms(
+            message: 'যিনি আমার জীবনকে ভালোবাসা এবং সুখে ভরিয়ে দেন, তাকে ভালোবাসা দিবসের শুভেচ্ছা! ❤️',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('যিনি আমার জীবনকে ভালোবাসা এবং সুখে ভরিয়ে দেন, তাকে ভালোবাসা দিবসের শুভেচ্ছা! ❤️');
+            },
+            copyButton: (){
+              FlutterClipboard.copy('যিনি আমার জীবনকে ভালোবাসা এবং সুখে ভরিয়ে দেন, তাকে ভালোবাসা দিবসের শুভেচ্ছা! ❤️');
+            },
+          ),
+          ReadSms(
+            message: 'যিনি আমার জীবনকে ভালোবাসা এবং সুখে ভরিয়ে দেন, তাকে ভালোবাসা দিবসের শুভেচ্ছা! ❤️',
+            favoriteButton: (){},
+            shareButton: (){
+              Share.share('যিনি আমার জীবনকে ভালোবাসা এবং সুখে ভরিয়ে দেন, তাকে ভালোবাসা দিবসের শুভেচ্ছা! ❤️');
+            },
+            copyButton: (){
+              FlutterClipboard.copy('যিনি আমার জীবনকে ভালোবাসা এবং সুখে ভরিয়ে দেন, তাকে ভালোবাসা দিবসের শুভেচ্ছা! ❤️');
+            },
+          ),
         ],
       ),
     );
   }
-}
+}*/

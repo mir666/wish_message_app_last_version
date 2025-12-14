@@ -21,7 +21,9 @@ class _AnniversaryScreenState extends State<AnniversaryScreen> {
           children: [
             Column(
               children: [
-                AnniversarySms(),
+                //AnniversarySms(),
+                //FarewellSms(),
+                SizedBox(height: 30),
               ],
             ),
           ],
@@ -29,5 +31,4 @@ class _AnniversaryScreenState extends State<AnniversaryScreen> {
       ),
     );
   }
-
 }

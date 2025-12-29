@@ -2,19 +2,19 @@ import 'category_model.dart';
 
 final categories = [
   CategoryModel(
+    title: 'ঈদ মোবারক',
+    keyName: 'ঈদ মোবারক',
+    icon: '🌙',
+  ),
+  CategoryModel(
     title: 'ভালবাসা',
     keyName: 'ভালবাসা',
     icon: '❤️',
   ),
   CategoryModel(
-    title: 'বার্ষিকী অনুষ্ঠান',
-    keyName: 'বার্ষিক অনুষ্ঠান',
+    title: 'বিবাহ বার্ষিকী',
+    keyName: 'বিবাহ বার্ষিকী',
     icon: '🎉',
-  ),
-  CategoryModel(
-    title: 'ঈদ মোবারক',
-    keyName: 'ঈদ মোবারক',
-    icon: '🤲',
   ),
   CategoryModel(
     title: 'জন্মদিন',
@@ -32,8 +32,8 @@ final categories = [
     icon: '🤝',
   ),
   CategoryModel(
-    title: 'ভালোবাসা দিবস',
-    keyName: 'ভালোবাসা দিবস',
+    title: 'ভালবাসা দিবস',
+    keyName: 'ভালবাসা দিবস',
     icon: '💘',
   ),
   CategoryModel(
@@ -49,16 +49,16 @@ final categories = [
   CategoryModel(
     title: 'শুভ রাত্রি',
     keyName: 'শুভ রাত্রি',
-    icon: '🌙',
+    icon: '🌜',
   ),
   CategoryModel(
-    title: 'বাগদান',
-    keyName: 'বাগদান',
+    title: 'এঙ্গেজমেন্ট',
+    keyName: 'এঙ্গেজমেন্ট',
     icon: '💍',
   ),
   CategoryModel(
-    title: 'বিবাহোৎসব',
-    keyName: 'বিবাহোৎসব',
+    title: 'বিবাহ উৎসব',
+    keyName: 'বিবাহ উৎসব',
     icon: '👰🤵',
   ),
 ];

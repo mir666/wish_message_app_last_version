@@ -64,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 Spacer(),
                 Column(
                   children: [
-                    SvgPicture.asset(AssetsPath.logoSvg, width: 90),
+                    SvgPicture.asset(AssetsPath.appLogo, width: 150,),
                     SizedBox(height: 32),
                     CircularProgressIndicator(color: Colors.lightBlue,),
                   ],

@@ -2,28 +2,29 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:wish_message_app/features/common/favorite/favorite_sms_screen.dart';
+import 'package:wish_message_app/features/common/category/controllers/ad_controller.dart';
 import 'package:wish_message_app/features/common/message_controller.dart';
 import 'package:wish_message_app/features/common/read_sms.dart';
 import 'package:wish_message_app/helper_ads.dart';
 
-class CategoryPage extends StatefulWidget {
-  final String category;
+class FavoriteScreen extends StatefulWidget {
+  const FavoriteScreen({super.key});
 
-  const CategoryPage({super.key, required this.category});
+  static const String name = '/favorite';
 
   @override
-  State<CategoryPage> createState() => _CategoryPageState();
+  State<FavoriteScreen> createState() => _FavoriteScreenState();
 }
 
-class _CategoryPageState extends State<CategoryPage> {
+class _FavoriteScreenState extends State<FavoriteScreen> {
   final controller = Get.find<MessageController>();
-
+  final AdController adController = AdController();
   BannerAd? _bannerAds;
 
   @override
   void initState() {
     _loadBannerAd();
+    adController.loadInterstitial();
     super.initState();
   }
 
@@ -51,30 +52,26 @@ class _CategoryPageState extends State<CategoryPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.category),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {
-              Navigator.pushNamed(context, FavoriteScreen.name);
-            },
-            icon: Icon(
-              Icons.favorite_border_outlined,
-              size: 28,
-              color: Colors.red,
-            ),
-          ),
-        ],
-      ),
+      appBar: AppBar(title: Text('পছন্দের মেসেজ'),centerTitle: true,),
       body: Stack(
         alignment: AlignmentGeometry.bottomCenter,
         children: [
           Obx(() {
-            final messages = controller.getMessages(widget.category);
+            final favoriteMessages = controller.getFavoriteMessages();
+
+            if (favoriteMessages.isEmpty) {
+              return const Center(
+                child: Text('এখনও কোনও পছন্দের SMS নেই। ❤️'),
+              );
+            }
+
             return ListView.builder(
-              itemCount: messages.length,
-              itemBuilder: (_, i) => WishMessageCard(message: messages[i]),
+              itemCount: favoriteMessages.length,
+              itemBuilder: (_, index) {
+                return WishMessageCard(
+                  message: favoriteMessages[index],
+                );
+              },
             );
           }),
           if(_bannerAds!= null)
